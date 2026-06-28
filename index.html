@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="UnknownCrystal 的个人作品集：设计、技术、研究与正在发生的实验。"
+    />
+    <title>UnknownCrystal | Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="monogram" href="#top" aria-label="返回首页">UC</a>
+        <div class="header-actions">
+          <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch to English">
+            <span class="language-option is-active">中</span>
+            <span>/</span>
+            <span class="language-option">EN</span>
+          </button>
+          <button class="contact-button" id="contact-button" type="button" aria-expanded="false">
+            <span data-i18n="contact">联系我</span>
+            <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="top" aria-labelledby="hero-title">
+          <p class="eyebrow">PERSONAL ARCHIVE / 2026</p>
+          <h1 id="hero-title">Unknown<span>Crystal</span></h1>
+          <div class="keyword-window" aria-label="关注领域">
+            <div class="keyword-track">
+              <span>vibe coding</span>
+              <span>人机交互设计</span>
+              <span>灵性研究</span>
+              <span>人类学</span>
+              <span>techno music</span>
+              <span>自制汤力水</span>
+              <span>LGBTQplus rights</span>
+              <span>爱摸小猫</span>
+              <span>………</span>
+              <span aria-hidden="true">vibe coding</span>
+              <span aria-hidden="true">人机交互设计</span>
+              <span aria-hidden="true">灵性研究</span>
+              <span aria-hidden="true">人类学</span>
+              <span aria-hidden="true">techno music</span>
+              <span aria-hidden="true">自制汤力水</span>
+              <span aria-hidden="true">LGBTQplus rights</span>
+              <span aria-hidden="true">爱摸小猫</span>
+              <span aria-hidden="true">………</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects-section" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">SELECTED PROJECTS</p>
+              <h2 id="projects-title" data-i18n="projectsTitle">作品与实验</h2>
+            </div>
+            <div class="project-tools">
+              <p data-i18n="projectsHint">悬停探索，点击查看项目详情。</p>
+              <div class="view-toggle" aria-label="展示方式">
+                <button class="view-toggle-button is-active" type="button" data-view="sphere" data-i18n="sphereView">
+                  球体
+                </button>
+                <button class="view-toggle-button" type="button" data-view="list" data-i18n="listView">
+                  列表
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="orbital-stage" id="project-grid" aria-label="项目列表"></div>
+          <div class="project-list-view" id="project-list" aria-label="项目列表"></div>
+        </section>
+      </main>
+
+      <footer>
+        <span>UNKNOWNCRYSTAL</span>
+        <span>SHANGHAI · AVAILABLE FOR COLLABORATION</span>
+      </footer>
+    </div>
+
+    <aside class="contact-popover" id="contact-popover" aria-hidden="true">
+      <button class="contact-close" id="contact-close" type="button" aria-label="关闭联系卡片">×</button>
+      <div class="portrait-placeholder">
+        <span data-i18n="portraitPlaceholder">个人形象照待上传</span>
+      </div>
+      <div class="contact-copy">
+        <p class="eyebrow">CONTACT CARD</p>
+        <h3>UnknownCrystal</h3>
+        <p data-i18n="contactIntro">欢迎交流创意、合作与有趣的新信号。</p>
+        <a href="mailto:maoson888@outlook.com">maoson888@outlook.com</a>
+        <a href="https://github.com/maochongmao40-oss" target="_blank" rel="noreferrer">
+          github.com/maochongmao40-oss
+        </a>
+      </div>
+    </aside>
+
+    <dialog class="project-dialog" id="project-dialog">
+      <button class="dialog-close" id="dialog-close" aria-label="关闭详情">×</button>
+      <div class="dialog-cover" id="dialog-cover">
+        <span data-i18n="coverPlaceholder">封面图片待上传</span>
+      </div>
+      <div class="dialog-copy">
+        <p class="eyebrow" id="dialog-tag"></p>
+        <h3 id="dialog-title"></h3>
+        <p id="dialog-description"></p>
+        <a id="dialog-link" href="#" target="_blank" rel="noreferrer">
+          <span data-i18n="viewProject">查看项目链接</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </dialog>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
