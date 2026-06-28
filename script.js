@@ -1,12 +1,12 @@
 const projects = [
   {
-    title: { zh: "项目名称 01", en: "Project 01" },
-    tag: "INTERACTION",
+    title: { zh: "techno world", en: "techno world" },
+    tag: "TECHNO",
     description: {
-      zh: "一句话介绍这个项目的核心想法，以及它试图解决的问题。",
-      en: "A one-line introduction to the project's core idea and the problem it explores.",
+      zh: "一个生成式 techno 视觉宇宙实验。",
+      en: "A generative visual universe for techno experiments.",
     },
-    link: "#",
+    link: "https://maochongmao40-oss.github.io/technogenregalaxy/",
     cover: "",
   },
   {
